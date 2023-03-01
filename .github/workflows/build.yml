@@ -1,7 +1,9 @@
 name: Build and test
 on:
   push:
-    branches: main
+    branches:
+      - main
+      - axum-0.5.x
 jobs:
   build:
     name: Build and test
