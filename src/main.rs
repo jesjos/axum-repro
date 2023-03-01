@@ -20,7 +20,7 @@ impl Web {
 async fn main() {
     let app = Router::new()
         // `POST /users` goes to `create_user`
-        .route("/events/:foo/", post(Web::create_event));
+        .route("/events/:foo", post(Web::create_event));
 
     // run our app with hyper
     // `axum::Server` is a re-export of `hyper::Server`
